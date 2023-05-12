@@ -1,1 +1,32 @@
-<p>header works!</p>
+
+<div style="background-color: burlywood; max-width: 700px; margin: 0 auto; padding: 20px;">
+
+    <br>
+    <p style="text-align: center;">Holi desde Header</p>
+    
+    <div style="background-color: azure">
+        <h1>Parte 1</h1>
+
+        <p> {{nombre}} </p>
+        <br>     
+        <button (click)="nombre='Cambio 1: Daniela'">Cambiar 1</button>
+        <button (click)="cambiarNombre()">Cambiar 2</button>
+    </div>
+
+    <div style="background-color: aquamarine">
+        <h1>Parte 2</h1>
+        
+        <p>{{contador}}</p>
+        <button (click)="contar()"> Contador </button>
+    </div>
+
+    <div style="background-color: gray">
+        <h1>Parte 3</h1>
+        
+        <ul>
+            <li *ngFor="let numero of array">{{numero}}</li>
+        </ul>
+        <button (click)="add()"> Agregar </button>
+    </div>
+
+</div>
