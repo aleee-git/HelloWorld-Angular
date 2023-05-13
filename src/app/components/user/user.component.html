@@ -1,0 +1,32 @@
+
+<div style="background-color: burlywood; max-width: 700px; margin: 0 auto; padding: 20px; text-align: center;">
+
+    <br>
+    <p>Holi desde User Component</p>
+    
+    <div style="background-color: azure">
+        <h1>Log In</h1>
+
+        <!-- ng-container para agrupar contenidos, pero no crea el contenedor para clases o estilos -->
+        <ng-container *ngIf="!isLogged; else logueado">
+            <button (click)="isLogged = true"> Iniciar Sesion</button>
+            <br> <br>
+            <button>Registrarse</button>
+            <br> <br>
+            <button (click)="level = level + 1">Subir Nivel</button>
+            <p>{{level}}</p>
+
+        </ng-container>
+
+        <ng-template #logueado>
+            <button>Ir a Administracion</button>
+            <br><br>
+            <button>Ir a Mi Perfil</button>
+            <br><br>
+            <button (click)="isLogged = false">Cerrar Sesion</button>
+        </ng-template>
+
+        <button *ngIf="level >= 10">Eres nivel VIP</button>
+    </div>
+
+</div>
