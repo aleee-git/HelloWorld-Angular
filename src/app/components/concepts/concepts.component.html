@@ -1,0 +1,32 @@
+
+<div style="background-color: burlywood; max-width: 700px; margin: 0 auto; padding: 20px;">
+
+    <br>
+    <p style="text-align: center;">Holi desde Concepts</p>
+    
+    <div style="background-color: azure">
+        <h1>Atributos</h1>
+        <button [disabled]="false">Titulo</button>
+        <br><br>
+        <button [disabled]="desactivado">Titulo</button>
+    </div>
+
+    <div style="background-color: aquamarine">
+        <h1>Eventos y Atributos</h1>
+        <p>Has seleccionado: {{seleccionado}} </p>
+
+        <select [(ngModel)] = "seleccionado">
+            <option value="Lunes">Lunes</option>
+            <option value="Martes">Martes</option>
+            <option value="Miercoles">Miercoles</option>
+            <option value="Jueves">Jueves</option>
+            <option value="Viernes">Viernes</option>
+        </select>
+        
+    </div>
+
+    <div style="background-color: gray">
+        <h1>Parte 3</h1>
+    </div>
+
+</div>
