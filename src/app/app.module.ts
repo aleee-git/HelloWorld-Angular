@@ -1,3 +1,5 @@
+import { RouterModule} from '@angular/router';
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -18,7 +20,13 @@ import { DirectiveComponent } from './components/directive/directive.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot([
+      { path: 'header', component: HeaderComponent },
+      { path: 'directive', component: DirectiveComponent },
+      { path: 'concepts', component: ConceptsComponent },
+      { path: 'user', component: UserComponent },
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
