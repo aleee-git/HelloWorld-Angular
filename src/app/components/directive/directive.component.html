@@ -1,0 +1,24 @@
+
+<h1 class="container bg-dark text-white text-center my-4 py-4">Directiva ngFor</h1>
+
+<div class="container">
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Edad (meses)</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let animal of animales; index as i">
+                <th scope="row">{{i+1}}</th>
+                <td>{{animal.tipo}}</td>
+                <td>{{animal.nombre}}</td>
+                <td>{{animal.edad}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
