@@ -9,6 +9,7 @@ import { UserComponent } from './components/user/user.component';
 import { ConceptsComponent } from './components/concepts/concepts.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveComponent } from './components/directive/directive.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DirectiveComponent } from './components/directive/directive.component';
     HeaderComponent,
     UserComponent,
     ConceptsComponent,
-    DirectiveComponent
+    DirectiveComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
