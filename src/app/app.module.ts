@@ -10,6 +10,7 @@ import { ConceptsComponent } from './components/concepts/concepts.component';
 import { FormsModule } from '@angular/forms';
 import { DirectiveComponent } from './components/directive/directive.component';
 import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -23,11 +24,13 @@ import { LoginComponent } from './components/login/login.component';
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot([
       { path: 'header', component: HeaderComponent },
       { path: 'directive', component: DirectiveComponent },
       { path: 'concepts', component: ConceptsComponent },
       { path: 'user', component: UserComponent },
+      { path: 'login', component: LoginComponent },
     ])
   ],
   providers: [],
